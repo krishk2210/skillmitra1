@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earn Money While Studying — Freelance Jobs for Students | SkillMitra</title>
+  <meta name="description" content="Find real freelance jobs for beginners. Browse remote writing, design, marketing, and tech gigs. Start earning while studying with SkillMitra's student job board.">
+  <meta name="keywords" content="freelance jobs for beginners, earn money while studying, online jobs for college students, student earning platform India, freelance work for students">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/earn.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/earn.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="SkillMitra Home">
+        <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+        Skill<span class="highlight">Mitra</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="earn.html" class="active">Earn</a>
+        <a href="mental-health.html">Mental Health</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#" class="btn--nav">Get Started Free</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="earn.html" class="active">Earn</a>
+    <a href="mental-health.html">Mental Health</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" class="btn--nav">Get Started Free</a>
+  </div>
+  <div class="nav-overlay"></div>
+
+  <main id="main-content">
+    <!-- ============ HERO ============ -->
+    <section class="hero hero--dark" aria-label="Earn hero">
+      <div class="hero-shape hero-shape--1"></div>
+      <div class="hero-shape hero-shape--2"></div>
+      <div class="container">
+        <h1>Start Earning While You Study.</h1>
+        <p class="hero-subtitle">Browse real freelance jobs posted by verified clients. No experience? No problem — we have beginner-friendly gigs waiting for you.</p>
+        <div class="hero-actions">
+          <a href="#jobs" class="btn btn--primary btn--lg">Browse Jobs</a>
+          <a href="#" class="btn btn--outline-white btn--lg">Create Your Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FILTER BAR ============ -->
+    <section class="section" id="jobs" aria-label="Job listings">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: var(--space-6); flex-wrap:wrap; gap: var(--space-3);">
+          <h2 class="animate-on-scroll" style="margin:0;">Available Jobs <span id="jobCount" style="color:var(--primary);font-size:var(--text-xl);">8</span></h2>
+          <p class="animate-on-scroll" style="color:var(--text-muted);margin:0;">Showing freelance opportunities for students</p>
+        </div>
+
+        <div class="filter-bar animate-on-scroll">
+          <div class="filter-group">
+            <label for="filterCategory">Category</label>
+            <select class="filter-select" id="filterCategory" aria-label="Filter by category">
+              <option value="all">All Categories</option>
+              <option value="writing">Writing</option>
+              <option value="design">Design</option>
+              <option value="marketing">Marketing</option>
+              <option value="tech">Tech</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filterType">Job Type</label>
+            <select class="filter-select" id="filterType" aria-label="Filter by job type">
+              <option value="all">All Types</option>
+              <option value="remote">Remote</option>
+              <option value="part-time">Part-time</option>
+              <option value="project">Project-based</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filterExperience">Experience</label>
+            <select class="filter-select" id="filterExperience" aria-label="Filter by experience level">
+              <option value="all">All Levels</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+            </select>
+          </div>
+          <button class="btn btn--primary btn--sm" id="filterBtn">
+            <i data-lucide="filter" style="width:16px;height:16px;"></i> Filter
+          </button>
+        </div>
+
+        <!-- Job Listings (rendered by JS) -->
+        <div class="jobs-grid" id="jobsContainer" aria-label="Job listing cards">
+          <!-- Jobs dynamically injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section how-it-works" aria-label="How it works">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>How It Works</h2>
+          <p>Three simple steps to start earning as a student freelancer.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="card step-card animate-on-scroll delay-1">
+            <div class="step-icon">
+              <i data-lucide="user-plus"></i>
+              <span class="step-number-badge">1</span>
+            </div>
+            <div class="step-connector"><i data-lucide="arrow-right"></i></div>
+            <h3>Create Your Profile</h3>
+            <p>Sign up free and add your skills, portfolio, and availability. It takes less than 5 minutes.</p>
+          </div>
+          <div class="card step-card animate-on-scroll delay-2">
+            <div class="step-icon">
+              <i data-lucide="search"></i>
+              <span class="step-number-badge">2</span>
+            </div>
+            <div class="step-connector"><i data-lucide="arrow-right"></i></div>
+            <h3>Browse & Apply</h3>
+            <p>Filter jobs by your skills and interests. Apply with a single click. Clients review and respond fast.</p>
+          </div>
+          <div class="card step-card animate-on-scroll delay-3">
+            <div class="step-icon">
+              <i data-lucide="indian-rupee"></i>
+              <span class="step-number-badge">3</span>
+            </div>
+            <h3>Get Paid</h3>
+            <p>Complete the project, get rated, and receive payment directly to your bank account. Simple.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUCCESS STORIES ============ -->
+    <section class="section success-stories" aria-label="Freelancer success stories">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Students Who Are Already Earning</h2>
+          <p>Real stories from students who turned their skills into income with SkillMitra.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card story-card animate-on-scroll delay-1">
+            <div class="story-earnings">₹42,000 <span>earned in 3 months</span></div>
+            <blockquote>"I started with zero clients. After completing the content writing course, I applied to 5 jobs on SkillMitra. Within a week, I had my first paying client!"</blockquote>
+            <div class="story-author">
+              <div class="story-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face" alt="Photo of Sneha Kapoor" loading="lazy">
+              </div>
+              <div class="story-info">
+                <span class="name">Sneha Kapoor</span>
+                <span class="skill">Content Writer • Pune</span>
+              </div>
+            </div>
+          </div>
+          <div class="card story-card animate-on-scroll delay-2">
+            <div class="story-earnings">₹28,000 <span>earned in 2 months</span></div>
+            <blockquote>"The Instagram management jobs on SkillMitra are perfect for students. I manage 3 brands now and earn more than my monthly hostel cost."</blockquote>
+            <div class="story-author">
+              <div class="story-avatar">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face" alt="Photo of Karan Reddy" loading="lazy">
+              </div>
+              <div class="story-info">
+                <span class="name">Karan Reddy</span>
+                <span class="skill">Social Media Manager • Hyderabad</span>
+              </div>
+            </div>
+          </div>
+          <div class="card story-card animate-on-scroll delay-3">
+            <div class="story-earnings">₹65,000 <span>earned in 4 months</span></div>
+            <blockquote>"After learning React on SkillMitra, I built 3 websites for local businesses. Now they refer me to their friends. My freelance income keeps growing!"</blockquote>
+            <div class="story-author">
+              <div class="story-avatar">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Photo of Amit Verma" loading="lazy">
+              </div>
+              <div class="story-info">
+                <span class="name">Amit Verma</span>
+                <span class="skill">Web Developer • Lucknow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DUAL CTA ============ -->
+    <section class="dual-cta" aria-label="Get started">
+      <div class="container">
+        <div class="dual-cta-grid">
+          <div class="cta-card animate-on-scroll delay-1">
+            <div class="card-icon card-icon--green" style="margin: 0 auto var(--space-5); width:64px;height:64px;">
+              <i data-lucide="user-check" style="width:28px;height:28px;"></i>
+            </div>
+            <h3>I'm a Student</h3>
+            <p>Create a free profile, browse jobs, and start earning with your skills today.</p>
+            <a href="#" class="btn btn--primary btn--lg">Create Your Profile</a>
+          </div>
+          <div class="cta-card animate-on-scroll delay-2">
+            <div class="card-icon card-icon--amber" style="margin: 0 auto var(--space-5); width:64px;height:64px;">
+              <i data-lucide="building-2" style="width:28px;height:28px;"></i>
+            </div>
+            <h3>I'm a Client</h3>
+            <p>Hire talented student freelancers for your projects. Budget-friendly, high-quality work.</p>
+            <a href="#" class="btn btn--warm btn--lg">Post a Job</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+            Skill<span class="highlight">Mitra</span>
+          </a>
+          <p>India's free platform for students to learn skills, earn money, and stay mentally strong. Built with love for the youth.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width:18px;height:18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="courses.html">Courses</a>
+          <a href="earn.html">Freelance Jobs</a>
+          <a href="mental-health.html">Mental Health</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#">Blog</a>
+          <a href="#">Help Center</a>
+          <a href="#">Community</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillMitra. All rights reserved. Made with 💚 in India.</p>
+        <div>
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Voiceflow Chat Widget -->
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '69ed9b3830a2ce164401f460' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>

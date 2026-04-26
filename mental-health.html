@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Mental Health Support for Students — SkillMitra | Wellness Tools & Peer Support</title>
+  <meta name="description" content="Free mental health support for students in India. Access breathing exercises, daily mood check-ins, anonymous peer forums, and mental wellness resources on SkillMitra.">
+  <meta name="keywords" content="student mental health support India, mental wellness for youth, peer support for students, free counselling for students, stress management for students">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mental-health.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/mental-health.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="SkillMitra Home">
+        <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+        Skill<span class="highlight">Mitra</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="earn.html">Earn</a>
+        <a href="mental-health.html" class="active">Mental Health</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#" class="btn--nav">Get Started Free</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="earn.html">Earn</a>
+    <a href="mental-health.html" class="active">Mental Health</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" class="btn--nav">Get Started Free</a>
+  </div>
+  <div class="nav-overlay"></div>
+
+  <main id="main-content">
+    <!-- ============ HERO ============ -->
+    <section class="hero hero--calm" aria-label="Mental health support">
+      <div class="container" style="text-align:center; max-width:700px;">
+        <h1 style="margin: 0 auto;">You Are Not Alone.<br>We're Here for You.</h1>
+        <p class="hero-subtitle" style="color: var(--text-muted); margin: var(--space-6) auto var(--space-8);">Free mental wellness tools and peer support, available anytime. Your well-being is just as important as your grades.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a href="#checkin" class="btn btn--accent btn--lg">How Are You Feeling?</a>
+          <a href="#breathing" class="btn btn--ghost btn--lg" style="border-color:var(--accent);">Try Breathing Exercise</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DAILY CHECK-IN ============ -->
+    <section class="section" id="checkin" aria-label="Daily mood check-in">
+      <div class="container container--narrow">
+        <div class="checkin-widget animate-on-scroll">
+          <h2>How are you feeling today?</h2>
+          <p style="color: var(--text-muted); margin-top: var(--space-2);">Take a moment to check in with yourself. No judgment, just honesty.</p>
+          <div class="mood-options" role="radiogroup" aria-label="Select your mood">
+            <button class="mood-option" data-mood="great" role="radio" aria-checked="false" aria-label="Feeling great">
+              <span class="mood-emoji">😄</span>
+              <span class="mood-label">Great</span>
+            </button>
+            <button class="mood-option" data-mood="good" role="radio" aria-checked="false" aria-label="Feeling good">
+              <span class="mood-emoji">🙂</span>
+              <span class="mood-label">Good</span>
+            </button>
+            <button class="mood-option" data-mood="okay" role="radio" aria-checked="false" aria-label="Feeling okay">
+              <span class="mood-emoji">😐</span>
+              <span class="mood-label">Okay</span>
+            </button>
+            <button class="mood-option" data-mood="low" role="radio" aria-checked="false" aria-label="Feeling low">
+              <span class="mood-emoji">😔</span>
+              <span class="mood-label">Low</span>
+            </button>
+            <button class="mood-option" data-mood="bad" role="radio" aria-checked="false" aria-label="Feeling bad">
+              <span class="mood-emoji">😢</span>
+              <span class="mood-label">Bad</span>
+            </button>
+          </div>
+          <div class="checkin-response" id="checkinResponse" aria-live="polite">
+            <p id="checkinText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUPPORT FEATURES ============ -->
+    <section class="section support-features" aria-label="Support tools">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Tools to Support Your Wellbeing</h2>
+          <p>Free resources designed to help you feel better, one step at a time.</p>
+        </div>
+        <div class="grid-4">
+          <div class="feature-card animate-on-scroll delay-1">
+            <div class="card-icon card-icon--purple">
+              <i data-lucide="clipboard-check"></i>
+            </div>
+            <h3>Daily Check-In</h3>
+            <p>Track how you feel every day. Self-awareness is the first step to healing.</p>
+            <a href="#checkin" class="btn btn--accent btn--sm">Check In Now</a>
+          </div>
+          <div class="feature-card animate-on-scroll delay-2">
+            <div class="card-icon card-icon--green">
+              <i data-lucide="wind"></i>
+            </div>
+            <h3>Breathing Exercises</h3>
+            <p>Guided breathing to calm your mind and reduce anxiety in just 3 minutes.</p>
+            <a href="#breathing" class="btn btn--primary btn--sm">Start Breathing</a>
+          </div>
+          <div class="feature-card animate-on-scroll delay-3">
+            <div class="card-icon card-icon--amber">
+              <i data-lucide="message-circle"></i>
+            </div>
+            <h3>Peer Forum</h3>
+            <p>Talk anonymously with other students. You're not the only one going through this.</p>
+            <a href="#" class="btn btn--warm btn--sm">Join Forum</a>
+          </div>
+          <div class="feature-card animate-on-scroll delay-4">
+            <div class="card-icon" style="background: #FCE4EC; color: #E91E63;">
+              <i data-lucide="book-heart"></i>
+            </div>
+            <h3>Self-Care Library</h3>
+            <p>Articles, tips, and exercises on sleep, stress relief, and building healthy habits.</p>
+            <a href="#articles" class="btn btn--ghost btn--sm">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BREATHING EXERCISE ============ -->
+    <section class="section" id="breathing" aria-label="Breathing exercise">
+      <div class="container container--narrow">
+        <div class="breathing-widget animate-on-scroll">
+          <h2>Breathing Exercise</h2>
+          <p style="color:var(--text-muted); margin-top:var(--space-2);">Follow the circle: breathe in for 4 seconds, hold for 4, breathe out for 4. Repeat as needed.</p>
+          <div class="breathing-circle" role="timer" aria-label="Breathing exercise circle">Ready</div>
+          <div class="breathing-controls">
+            <button class="btn btn--accent" id="startBreathing">
+              <i data-lucide="play" style="width:18px;height:18px;"></i> Start
+            </button>
+            <button class="btn btn--ghost" id="stopBreathing" style="display:none;">
+              <i data-lucide="square" style="width:18px;height:18px;"></i> Stop
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SELF-CARE TIPS ============ -->
+    <section class="section selfcare-section" aria-label="Self-care tips">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Simple Self-Care Tips</h2>
+          <p>Small actions, big impact. Start with just one today.</p>
+        </div>
+        <div class="grid-2">
+          <div class="tip-card animate-on-scroll delay-1">
+            <div class="tip-icon">
+              <i data-lucide="moon"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Prioritize Sleep</h3>
+              <p>Try to get 7–8 hours of sleep. Put your phone away 30 minutes before bed. Your brain needs rest to function well.</p>
+            </div>
+          </div>
+          <div class="tip-card animate-on-scroll delay-2">
+            <div class="tip-icon">
+              <i data-lucide="activity"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Move Your Body</h3>
+              <p>Even a 15-minute walk can boost your mood. Exercise releases endorphins — your brain's natural feel-good chemicals.</p>
+            </div>
+          </div>
+          <div class="tip-card animate-on-scroll delay-3">
+            <div class="tip-icon">
+              <i data-lucide="message-square"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Talk to Someone</h3>
+              <p>You don't have to figure everything out alone. Reach out to a friend, family member, or a helpline. Talking helps.</p>
+            </div>
+          </div>
+          <div class="tip-card animate-on-scroll delay-4">
+            <div class="tip-icon">
+              <i data-lucide="coffee"></i>
+            </div>
+            <div class="tip-content">
+              <h3>Take Real Breaks</h3>
+              <p>Scrolling social media isn't a break. Step away from screens. Drink water. Stretch. Give your mind actual downtime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HELPLINE RESOURCES ============ -->
+    <section class="section helplines-section" aria-label="Mental health helplines">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Need to Talk to Someone?</h2>
+          <p>These helplines are free, confidential, and available for students across India.</p>
+        </div>
+        <div class="grid-3">
+          <div class="helpline-card animate-on-scroll delay-1">
+            <h3>iCall — TISS</h3>
+            <div class="phone">
+              <i data-lucide="phone" style="width:18px;height:18px;"></i>
+              9152987821
+            </div>
+            <p class="timing">Mon–Sat, 8 AM – 10 PM</p>
+            <p>Free psychosocial counselling for students and young adults by trained counsellors at TISS, Mumbai.</p>
+            <a href="tel:9152987821" class="btn btn--accent btn--sm" style="margin-top:var(--space-4);">
+              <i data-lucide="phone-call" style="width:16px;height:16px;"></i> Call Now
+            </a>
+          </div>
+          <div class="helpline-card animate-on-scroll delay-2">
+            <h3>Vandrevala Foundation</h3>
+            <div class="phone">
+              <i data-lucide="phone" style="width:18px;height:18px;"></i>
+              1860-2662-345
+            </div>
+            <p class="timing">24/7, All days</p>
+            <p>India's premier mental health foundation. Free counselling in multiple languages, available round the clock.</p>
+            <a href="tel:18602662345" class="btn btn--accent btn--sm" style="margin-top:var(--space-4);">
+              <i data-lucide="phone-call" style="width:16px;height:16px;"></i> Call Now
+            </a>
+          </div>
+          <div class="helpline-card animate-on-scroll delay-3">
+            <h3>NIMHANS Helpline</h3>
+            <div class="phone">
+              <i data-lucide="phone" style="width:18px;height:18px;"></i>
+              080-46110007
+            </div>
+            <p class="timing">Mon–Sat, 9:30 AM – 4:30 PM</p>
+            <p>Government-run mental health helpline by India's premier institute, NIMHANS, Bangalore.</p>
+            <a href="tel:08046110007" class="btn btn--accent btn--sm" style="margin-top:var(--space-4);">
+              <i data-lucide="phone-call" style="width:16px;height:16px;"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WELLNESS ARTICLES ============ -->
+    <section class="section articles-section" id="articles" aria-label="Wellness articles">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Read & Reflect</h2>
+          <p>Wellness articles written for students, by people who understand what you're going through.</p>
+        </div>
+        <div class="grid-3">
+          <div class="article-card animate-on-scroll delay-1">
+            <div class="article-img">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" alt="Student studying at desk, managing exam stress" loading="lazy">
+            </div>
+            <div class="article-body">
+              <span class="article-tag">Exam Stress</span>
+              <h3>5 Ways to Beat Exam Anxiety Without Burning Out</h3>
+              <p>Exam season doesn't have to destroy your peace. These simple strategies help you study smarter, not harder — and feel calmer while doing it.</p>
+              <a href="#" class="article-link">Read More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+            </div>
+          </div>
+          <div class="article-card animate-on-scroll delay-2">
+            <div class="article-img">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop" alt="Person exercising outdoors, building healthy habits" loading="lazy">
+            </div>
+            <div class="article-body">
+              <span class="article-tag">Healthy Habits</span>
+              <h3>Building Habits That Actually Stick — A Student's Guide</h3>
+              <p>Why do most habits fail? Because we try to change too much at once. Here's how to build one small habit that transforms your daily routine.</p>
+              <a href="#" class="article-link">Read More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+            </div>
+          </div>
+          <div class="article-card animate-on-scroll delay-3">
+            <div class="article-img">
+              <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=400&h=250&fit=crop" alt="Student looking at window, dealing with failure" loading="lazy">
+            </div>
+            <div class="article-body">
+              <span class="article-tag">Resilience</span>
+              <h3>Failing an Exam Doesn't Make You a Failure</h3>
+              <p>Failure feels heavy. But it's also the most powerful teacher. Read how other students bounced back from their lowest moments to achieve more.</p>
+              <a href="#" class="article-link">Read More <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMUNITY CTA ============ -->
+    <section class="community-cta" aria-label="Join the support community">
+      <div class="container animate-on-scroll">
+        <h2>Join Our Support Community</h2>
+        <p>Connect with thousands of students, share your thoughts anonymously, and find strength in knowing you're not alone.</p>
+        <a href="#" class="btn btn--outline-white btn--lg" style="border-color:rgba(255,255,255,0.3);">
+          <i data-lucide="users" style="width:18px;height:18px;"></i> Join the Forum
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+            Skill<span class="highlight">Mitra</span>
+          </a>
+          <p>India's free platform for students to learn skills, earn money, and stay mentally strong. Built with love for the youth.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width:18px;height:18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="courses.html">Courses</a>
+          <a href="earn.html">Freelance Jobs</a>
+          <a href="mental-health.html">Mental Health</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#">Blog</a>
+          <a href="#">Help Center</a>
+          <a href="#">Community</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillMitra. All rights reserved. Made with 💚 in India.</p>
+        <div>
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Voiceflow Chat Widget -->
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '69ed9b3830a2ce164401f460' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>

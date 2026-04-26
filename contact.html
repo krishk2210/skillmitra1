@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact SkillMitra — Get In Touch | Questions, Partnerships & Support</title>
+  <meta name="description" content="Have a question about SkillMitra courses, freelance jobs, or mental health support? Contact us. We reply within 24 hours.">
+  <meta name="keywords" content="contact SkillMitra, student platform support, SkillMitra help, course query, partnership">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="SkillMitra Home">
+        <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+        Skill<span class="highlight">Mitra</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="earn.html">Earn</a>
+        <a href="mental-health.html">Mental Health</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#" class="btn--nav">Get Started Free</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="earn.html">Earn</a>
+    <a href="mental-health.html">Mental Health</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="#" class="btn--nav">Get Started Free</a>
+  </div>
+  <div class="nav-overlay"></div>
+
+  <main id="main-content">
+    <!-- ============ HERO ============ -->
+    <section class="hero hero--light" style="min-height:350px;" aria-label="Contact hero">
+      <div class="container" style="text-align:center;">
+        <h1>We'd Love to Hear From You.</h1>
+        <p class="hero-subtitle" style="color: var(--text-muted); margin: var(--space-4) auto 0; max-width:520px;">Whether you have a question about our courses, jobs, or just want to say hi — drop us a message.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT FORM + INFO ============ -->
+    <section class="section" style="padding-top: var(--space-8);" aria-label="Contact form">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Form Card -->
+          <div class="contact-form-card animate-on-scroll">
+            <h2>Send Us a Message</h2>
+            <p>Fill in the form below and we'll get back to you within 24 hours.</p>
+            
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name *</label>
+                  <input type="text" id="fullName" class="form-input" placeholder="Your full name" aria-required="true">
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" id="email" class="form-input" placeholder="your.email@example.com" aria-required="true">
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject *</label>
+                <select id="subject" class="form-select form-input" aria-required="true">
+                  <option value="">Select a subject</option>
+                  <option value="course">Course Query</option>
+                  <option value="job">Job Query</option>
+                  <option value="mental-health">Mental Health</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" class="form-textarea" placeholder="How can we help you?" rows="5" aria-required="true"></textarea>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">
+                <i data-lucide="send" style="width:18px;height:18px;"></i> Send Message
+              </button>
+            </form>
+
+            <!-- Success State -->
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">
+                <i data-lucide="check-circle" style="width:28px;height:28px;"></i>
+              </div>
+              <h3>Message Sent Successfully!</h3>
+              <p style="color: var(--text-muted);">Thanks for reaching out. We'll reply to your email within 24 hours. In the meantime, check out our <a href="courses.html" style="color: var(--primary); font-weight:600;">courses</a> or <a href="earn.html" style="color: var(--primary); font-weight:600;">job board</a>.</p>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info animate-on-scroll delay-1">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:hello@skillmitra.in">hello@skillmitra.in</a></p>
+                <p>For partnerships: <a href="mailto:partners@skillmitra.in">partners@skillmitra.in</a></p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i data-lucide="instagram"></i>
+              </div>
+              <div>
+                <h4>Follow Us on Instagram</h4>
+                <p><a href="#">@skillmitra.in</a></p>
+                <p>DM us for quick questions and updates!</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i data-lucide="clock"></i>
+              </div>
+              <div>
+                <h4>Response Time</h4>
+                <p>We typically reply within <strong>24 hours</strong>.</p>
+                <p>Urgent? DM us on Instagram for faster support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq-section" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common questions about SkillMitra.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              Is SkillMitra completely free?
+              <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Yes! SkillMitra is free for all students. Most of our courses, the job board, and all mental health tools are completely free. We offer some optional premium courses with advanced content and mentor support, but there's plenty to learn and earn without spending anything.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              How do I get certified after completing a course?
+              <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>After completing all modules and assignments in a course, you'll receive a digital certificate that you can download, share on LinkedIn, and add to your resume. Certificates are verified and linked to your SkillMitra profile.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              Can I post a job as a client or business?
+              <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Absolutely! If you're a business or individual looking to hire talented student freelancers, you can create a free client account and post jobs on our Earn page. All clients are verified to ensure a safe experience for students.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              Is my data safe on SkillMitra?
+              <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Your privacy is our top priority. We use industry-standard encryption, never sell your data, and our mental health tools are completely anonymous. Read our full <a href="#" style="color:var(--primary);">Privacy Policy</a> for details.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              How do I reset my password?
+              <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Click "Forgot Password" on the login page and enter your registered email address. You'll receive a password reset link within minutes. If you signed up with Google, you can log in directly with your Google account — no password needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HELP CENTER CTA ============ -->
+    <section class="help-cta" aria-label="Help center">
+      <div class="container animate-on-scroll">
+        <h2>Have More Questions?</h2>
+        <p>Browse our Help Center for detailed guides, tutorials, and troubleshooting tips.</p>
+        <a href="#" class="btn btn--primary btn--lg">
+          <i data-lucide="life-buoy" style="width:18px;height:18px;"></i> Browse Help Center
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+            Skill<span class="highlight">Mitra</span>
+          </a>
+          <p>India's free platform for students to learn skills, earn money, and stay mentally strong. Built with love for the youth.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width:18px;height:18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="courses.html">Courses</a>
+          <a href="earn.html">Freelance Jobs</a>
+          <a href="mental-health.html">Mental Health</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#">Blog</a>
+          <a href="#">Help Center</a>
+          <a href="#">Community</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillMitra. All rights reserved. Made with 💚 in India.</p>
+        <div>
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Voiceflow Chat Widget -->
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '69ed9b3830a2ce164401f460' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>

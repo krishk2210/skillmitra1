@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Online Courses for Students — SkillMitra | Learn Skills That Get You Hired</title>
+  <meta name="description" content="Explore 50+ free courses in digital marketing, graphic design, content writing, coding, and more. Build real skills and get hired — all free at SkillMitra.">
+  <meta name="keywords" content="free online courses for students India, digital marketing course free, skill development platform, learn graphic design free, content writing course">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/courses.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/courses.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="SkillMitra Home">
+        <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+        Skill<span class="highlight">Mitra</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="earn.html">Earn</a>
+        <a href="mental-health.html">Mental Health</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#" class="btn--nav">Get Started Free</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html" class="active">Courses</a>
+    <a href="earn.html">Earn</a>
+    <a href="mental-health.html">Mental Health</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" class="btn--nav">Get Started Free</a>
+  </div>
+  <div class="nav-overlay"></div>
+
+  <main id="main-content">
+    <!-- ============ HERO ============ -->
+    <section class="hero hero--light" aria-label="Courses hero">
+      <div class="container">
+        <h1>Skills That Get You Hired.</h1>
+        <p class="hero-subtitle" style="color: var(--text-muted);">Explore free, expert-led courses designed to make you job-ready. Learn at your own pace, from anywhere in India.</p>
+      </div>
+    </section>
+
+    <!-- ============ SEARCH & FILTER ============ -->
+    <section class="section" style="padding-top: var(--space-8);" aria-label="Course catalog">
+      <div class="container">
+        <div class="courses-toolbar animate-on-scroll">
+          <div class="search-wrapper">
+            <i data-lucide="search" style="width:18px;height:18px;"></i>
+            <input type="text" id="courseSearch" class="search-input" placeholder="Search courses by name, skill, or topic..." aria-label="Search courses">
+          </div>
+          <div class="category-tabs" role="tablist" aria-label="Course categories">
+            <button class="category-tab active" data-category="all" role="tab" aria-selected="true">All Courses</button>
+            <button class="category-tab" data-category="marketing" role="tab" aria-selected="false">Marketing</button>
+            <button class="category-tab" data-category="design" role="tab" aria-selected="false">Design</button>
+            <button class="category-tab" data-category="tech" role="tab" aria-selected="false">Tech</button>
+            <button class="category-tab" data-category="writing" role="tab" aria-selected="false">Writing</button>
+          </div>
+        </div>
+
+        <!-- Course Grid (rendered by JS) -->
+        <div class="course-grid" id="courseGrid" aria-label="Course listings">
+          <!-- Courses dynamically injected here -->
+        </div>
+
+        <!-- No Results -->
+        <div class="no-results" id="noResults" style="display: none;" aria-live="polite">
+          <i data-lucide="search-x" style="width:48px;height:48px;display:block;margin:0 auto;"></i>
+          <h3>No courses found</h3>
+          <p>Try a different search term or browse all categories.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED COURSE BANNER ============ -->
+    <section class="section--sm" aria-label="Featured premium course">
+      <div class="container">
+        <div class="featured-banner animate-scale">
+          <div class="featured-banner-content">
+            <span class="badge">⭐ Featured Premium</span>
+            <h3>Full-Stack Web Development Bootcamp</h3>
+            <p>Go from zero to building complete web apps in 12 weeks. Master HTML, CSS, JavaScript, React, Node.js, and MongoDB with hands-on projects and mentor support.</p>
+            <div style="display:flex; gap: var(--space-3); flex-wrap: wrap;">
+              <a href="#" class="btn btn--primary">Enroll Now</a>
+              <a href="#" class="btn btn--outline-white btn--sm">Learn More</a>
+            </div>
+          </div>
+          <div class="featured-banner-img">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=350&fit=crop" alt="Developer coding on a laptop with multiple screens showing web development" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUGGESTION SECTION ============ -->
+    <section class="suggestion-section" aria-label="Suggest a course">
+      <div class="container animate-on-scroll">
+        <h2>Can't find your course?</h2>
+        <p style="color: var(--text-muted); font-size: var(--text-lg);">Tell us what you want to learn, and we'll work on creating it for you.</p>
+        <form class="suggestion-form" id="suggestionForm" aria-label="Course suggestion form">
+          <input type="text" placeholder="e.g., Video editing, Data Analysis, Public Speaking..." aria-label="Suggest a course topic" required>
+          <button type="submit" class="btn btn--primary">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon"><i data-lucide="sparkles" style="width:20px;height:20px;"></i></span>
+            Skill<span class="highlight">Mitra</span>
+          </a>
+          <p>India's free platform for students to learn skills, earn money, and stay mentally strong. Built with love for the youth.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" style="width:18px;height:18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="courses.html">Courses</a>
+          <a href="earn.html">Freelance Jobs</a>
+          <a href="mental-health.html">Mental Health</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#">Blog</a>
+          <a href="#">Help Center</a>
+          <a href="#">Community</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillMitra. All rights reserved. Made with 💚 in India.</p>
+        <div>
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Voiceflow Chat Widget -->
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '69ed9b3830a2ce164401f460' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>
